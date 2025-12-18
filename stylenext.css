@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+/* Corpo */
+body {
+    background: linear-gradient(135deg, #0f0f0f, #2b0a3d);
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Container */
+.table-container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #141414;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(128, 0, 255, 0.25);
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Cabeçalho */
+thead {
+    background: linear-gradient(135deg, #5f2c82, #8e2de2);
+}
+
+thead th {
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Linhas */
+tbody tr {
+    border-bottom: 1px solid #2b2b2b;
+    transition: background 0.2s, transform 0.1s;
+}
+
+tbody tr:hover {
+    background-color: #1e1e1e;
+    transform: scale(1.005);
+}
+
+/* Células */
+td {
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* Prioridades */
+.prioridade-urgente {
+    background-color: #ff1744;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prioridade-media {
+    background-color: #7c4dff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prioridade-facil {
+    background-color: #00c853;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Imagem */
+table img {
+    max-width: 90px;
+    border-radius: 10px;
+    border: 2px solid #7c4dff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 20px;
+        background: #141414;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(128, 0, 255, 0.2);
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+}
