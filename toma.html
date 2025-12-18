@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Chamado</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<h2 class="titulo">Abertura de Chamado</h2>
+
+<div class="container">
+    <form action="salvar.php" method="POST" enctype="multipart/form-data">
+
+    
+        <div class="linha">
+            <div class="campo">
+                <label>CPF/CNPJ *</label>
+                <input type="text" name="cpf_cnpj" required>
+            </div>
+
+            <div class="campo">
+                <label>Nome / Razão Social *</label>
+                <input type="text" name="nome" required>
+            </div>
+        </div>
+
+    
+        <div class="linha">
+            <div class="campo">
+                <label>Assunto *</label>
+                <input type="text" name="assunto" required>
+            </div>
+        </div>
+
+    
+        <div class="linha">
+            <div class="campo">
+                <label>Mensagem *</label>
+                <textarea name="mensagem" rows="4" required></textarea>
+            </div>
+        </div>
+
+
+        <div class="linha">
+            <div class="campo">
+                <label>Prioridade *</label><br>
+
+                <input type="radio" name="situacao" value="Urgente" required> Urgente
+                <input type="radio" name="situacao" value="Médio"> Médio
+                <input type="radio" name="situacao" value="Fácil"> Fácil
+            </div>
+        </div>
+
+    
+        <div class="linha">
+            <div class="campo">
+                <label>Anexar Fotos/Vídeos</label>
+                <input type="file" name="imagens[]" multiple>
+            </div>
+        </div>
+
+    
+        <button class="btn-enviar" type="submit">Enviar Chamado</button>
+
+    </form>
+</div>
+
+</body>
+</html>
